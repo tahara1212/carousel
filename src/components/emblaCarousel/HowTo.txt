@@ -1,3 +1,4 @@
+https://www.embla-carousel.com/get-started/react/
 
 1. 基本的なオプション
 loop: trueまたはfalseを指定します。trueの場合、スライドが無限にループします。
