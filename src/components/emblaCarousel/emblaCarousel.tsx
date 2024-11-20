@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import useEmblaCarousel from 'embla-carousel-react'
 import Autoplay from 'embla-carousel-autoplay'
-import styles from './emblaCarousel.module.css';
+import styles from './EmblaCarousel.module.css';
 
 export function EmblaCarousel() {
   const [emblaRef] = useEmblaCarousel({ loop: true }, [Autoplay({ delay: 1000 })])

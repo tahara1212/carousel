@@ -1,0 +1,8 @@
+.swiperContainer {
+    overflow: hidden; /* 隠れる部分を隠す */
+  }
+  
+  .swiperSlide {
+    width: calc(33.33% - 50px); /* 3スライド表示 + スペースを考慮 */
+    opacity: 0.8; /* スライドの透明度 */
+  }

@@ -1,5 +1,6 @@
 import Head from "next/head";
-import { EmblaCarousel } from "@/components/emblaCarousel/emblaCarousel";
+import { EmblaCarousel } from "@/components/EmblaCarousel/EmblaCarousel";
+import Swiper from "@/components/Swiper/Swiper";
 
 export default function Home() {
   return (
@@ -11,6 +12,8 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <EmblaCarousel />
+      <div style={{ margin: '100px 0' }} />
+      <Swiper />
     </>
   );
 }
