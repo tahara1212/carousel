@@ -1,0 +1,46 @@
+
+1. 基本的なオプション
+loop: trueまたはfalseを指定します。trueの場合、スライドが無限にループします。
+
+const [emblaRef] = useEmblaCarousel({ loop: true });
+align: スライドのアライメントを指定します。start、center、endのいずれかを選択できます。
+
+const [emblaRef] = useEmblaCarousel({ align: 'center' });
+slidesToScroll: 一度にスクロールするスライドの数を指定します。特定の数値またはautoを指定できます。
+
+const [emblaRef] = useEmblaCarousel({ slidesToScroll: 1 });
+startIndex: 初期表示するスライドのインデックスを指定します（0から始まります）。
+
+const [emblaRef] = useEmblaCarousel({ startIndex: 0 });
+2. スクロールに関するオプション
+dragFree: マウスやタッチでのドラッグが自由に行えるようにします。trueまたはfalseを指定します。
+
+const [emblaRef] = useEmblaCarousel({ dragFree: true });
+watchDrag: ドラッグイベントを監視するかどうかを指定します。カスタムロジックを追加することもできます。
+
+const [emblaRef] = useEmblaCarousel({ watchDrag: false });
+3. レスポンシブオプション
+breakpoints: メディアクエリに応じてオプションを変更するためのオブジェクトを指定します。
+const [emblaRef] = useEmblaCarousel({
+  breakpoints: {
+    '(min-width: 768px)': { loop: false },
+    '(max-width: 480px)': { slidesToScroll: 1 }
+  }
+});
+4. スクロールの設定
+duration: スクロールのアニメーションにかける時間を指定します（推奨値は20〜60）。
+
+const [emblaRef] = useEmblaCarousel({ duration: 25 });
+dragThreshold: ドラッグの閾値をピクセル単位で指定します。
+
+const [emblaRef] = useEmblaCarousel({ dragThreshold: 10 });
+5. その他のオプション
+containScroll: スクロールを制限する方法を指定します。trimSnapsまたはkeepSnapsを選択できます。
+
+const [emblaRef] = useEmblaCarousel({ containScroll: 'trimSnaps' });
+direction: コンテンツの方向を指定します。ltr（左から右）またはrtl（右から左）を選択できます。
+
+const [emblaRef] = useEmblaCarousel({ direction: 'ltr' });
+watchResize: サイズ変更を監視するかどうかを指定します。
+
+const [emblaRef] = useEmblaCarousel({ watchResize: true });
